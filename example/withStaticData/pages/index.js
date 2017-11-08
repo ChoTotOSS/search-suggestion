@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Suggestion from 'react-suggestion';
+import Suggestion from 'search-suggestion';
 import InputItem from '../components/InputItem';
 import ListItem from '../components/ListItem/ListItem.js';
 import Item from '../components/ListItem/Item.js';
