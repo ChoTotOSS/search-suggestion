@@ -9,7 +9,11 @@
 
 # Search Suggestion
 
-Simple lightweight search suggestion component
+Simple lightweight search suggestion component. This component was inspired by 
+[downshift (paypal)](https://github.com/paypal/downshift) component.
+
+Also this component applies `Function as Child Components` pattern. You can read more about this pattern [here](https://medium.com/merrickchristensen/function-as-child-components-5f3920a9ace9)
+
 
 ## Installation
 
