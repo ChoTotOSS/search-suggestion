@@ -1,3 +1,5 @@
+[![Code Coverage][coverage-badge]][coverage]
+
 # Search Suggestion
 
 Simple lightweight search suggestion component
