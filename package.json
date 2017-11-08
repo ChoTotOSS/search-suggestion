@@ -1,6 +1,6 @@
 {
   "name": "search-suggestion",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description":
     "Simple, lightweight, flexible search suggestion, autocomplete component",
   "dependencies": {},
