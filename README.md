@@ -21,6 +21,11 @@ or
 yarn add search-suggestion
 ```
 
+## Examples
+Check here for more example: 
+
+[https://github.com/ChoTotOSS/search-suggestion/tree/master/example/](https://github.com/ChoTotOSS/search-suggestion/tree/master/example/)
+
 ## Live demo
 ### live demo 1
 ![suggestion](https://user-images.githubusercontent.com/6290720/32546438-b18b9ba4-c4b1-11e7-99d4-e2a7e39191ce.gif)
