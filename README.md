@@ -1,4 +1,4 @@
-[![Code Coverage][coverage-badge]][coverage]
+[![codecov](https://codecov.io/gh/ChoTotOSS/search-suggestion/branch/master/graph/badge.svg)](https://codecov.io/gh/ChoTotOSS/search-suggestion)
 
 # Search Suggestion
 
