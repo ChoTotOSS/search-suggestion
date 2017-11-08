@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Suggestion render list item should render list items 1`] = `
+<div
+  id="autoComplete"
+>
+  <div>
+    <span
+      id="item_0"
+      onClick={[Function]}
+    >
+      0
+    </span>
+    <span
+      id="item_1"
+      onClick={[Function]}
+    >
+      1
+    </span>
+    <span
+      id="item_2"
+      onClick={[Function]}
+    >
+      2
+    </span>
+    <span
+      id="item_3"
+      onClick={[Function]}
+    >
+      3
+    </span>
+    <span
+      id="item_4"
+      onClick={[Function]}
+    >
+      4
+    </span>
+  </div>
+</div>
+`;
