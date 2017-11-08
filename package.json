@@ -1,13 +1,29 @@
 {
   "name": "search-suggestion",
   "version": "0.0.2",
-  "dependencies": {
+  "description":
+    "Simple, lightweight, flexible search suggestion, autocomplete component",
+  "dependencies": {},
+  "main": "dist/index.js",
+  "author":
+    "David Nguyen <dzungnguyen179@gmail.com> (dzungnguyen179@gmail.com)",
+  "keywords": [
+    "enhanced input",
+    "react",
+    "autocomplete",
+    "autosuggest",
+    "typeahead",
+    "dropdown",
+    "select",
+    "combobox",
+    "omnibox",
+    "multiselect",
+    "multiple selection"
+  ],
+  "devDependencies": {
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
-  },
-  "main": "dist/index.js",
-  "devDependencies": {
+    "react-dom": "^15.6.1",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^7.2.3",
     "babel-preset-es2015": "^6.24.1",
@@ -35,5 +51,15 @@
     "coverage": "npm test -- --coverage",
     "eject": "react-scripts eject",
     "eslint": "eslint ./src/**/*.js"
-  }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChoTotOSS/search-suggestion.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChoTotOSS/search-suggestion/issues"
+  },
+  "homepage":
+    "https://github.com/ChoTotOSS/search-suggestion/blob/master/README.md"
 }
