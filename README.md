@@ -26,14 +26,14 @@ yarn add search-suggestion
 ```
 
 ## Usage
-
+You can check out the basic demo here:
+[https://codesandbox.io/s/n45j5zjwyj](https://codesandbox.io/s/n45j5zjwyj)
 ```js
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Suggestion from 'search-suggestion';
 
 const items = ['apple', 'pear', 'orange', 'grape', 'banana'];
-
 
 class App extends Component {
   constructor(props) {
