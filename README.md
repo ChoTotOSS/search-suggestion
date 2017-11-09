@@ -120,13 +120,15 @@ render(<App />, document.getElementById('root'));
 ## Examples
 Check here for more example: 
 
-[https://github.com/ChoTotOSS/search-suggestion/tree/master/example/](https://github.com/ChoTotOSS/search-suggestion/tree/master/example/)
+[https://github.com/ChoTotOSS/search-suggestion/tree/master/examples/](https://github.com/ChoTotOSS/search-suggestion/tree/master/examples/)
 
-## Live demo
-### live demo 1
+## Showcase
+Websites built with Search Suggestion component
+
+### [Chợ tốt](https://www.chotot.com/toan-quoc/mua-ban)
 ![suggestion](https://user-images.githubusercontent.com/6290720/32546438-b18b9ba4-c4b1-11e7-99d4-e2a7e39191ce.gif)
 
-### live demo 2
+### [Chợ tốt nhà](https://nha.chotot.com/toan-quoc/du-an-rg0-cg10000)
 ![new_property_suggestion](https://user-images.githubusercontent.com/6290720/32546472-d117d3d4-c4b1-11e7-9d10-145a0595463e.gif)
 
 # Alternatives
