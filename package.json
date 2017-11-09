@@ -1,6 +1,6 @@
 {
   "name": "search-suggestion",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description":
     "Simple, lightweight, flexible search suggestion, autocomplete component",
   "main": "dist/index.js",
