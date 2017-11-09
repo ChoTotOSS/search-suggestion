@@ -50,12 +50,8 @@ class App extends Component {
   };
 
   render() {
-    const { selectedItem } = this.state;
     return (
       <AppWrapper>
-        <p>
-          {selectedItem.code} - {selectedItem.name}
-        </p>
         <Suggestion
           getDisplayName={item => item.name}
           items={this.state.currentData}
@@ -73,6 +69,7 @@ class App extends Component {
             clearInputValue
           }) => (
             <Div>
+              <p>{JSON.stringify(selectedItem)}</p>
               <InputItem
                 {...getInputProps({
                   placeholder: 'Select country',
