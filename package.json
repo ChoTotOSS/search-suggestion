@@ -3,7 +3,6 @@
   "version": "0.0.4",
   "description":
     "Simple, lightweight, flexible search suggestion, autocomplete component",
-  "dependencies": {},
   "main": "dist/index.js",
   "author":
     "David Nguyen <dzungnguyen179@gmail.com> (dzungnguyen179@gmail.com)",
@@ -20,6 +19,11 @@
     "multiselect",
     "multiple selection"
   ],
+  "dependencies": {},
+  "peerDependencies": {
+    "prop-types": ">=15",
+    "react": ">=15"
+  },
   "devDependencies": {
     "prop-types": "^15.5.10",
     "react": "^15.6.1",
