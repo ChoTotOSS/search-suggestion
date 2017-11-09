@@ -16,7 +16,7 @@ class Suggestion extends React.Component {
       inputValue: '',
       dataLength: 0,
       currentValue: null,
-      selectedItem: {},
+      selectedItem: null,
       isOutsideClick: false,
       isOpen: false,
       highlightedIndex: 0
