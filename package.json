@@ -1,11 +1,9 @@
 {
   "name": "search-suggestion",
   "version": "0.0.7",
-  "description":
-    "Simple, lightweight, flexible search suggestion, autocomplete component",
+  "description": "Simple, lightweight, flexible search suggestion, autocomplete component",
   "main": "dist/index.js",
-  "author":
-    "David Nguyen <dzungnguyen179@gmail.com> (dzungnguyen179@gmail.com)",
+  "author": "David Nguyen <dzungnguyen179@gmail.com> (dzungnguyen179@gmail.com)",
   "keywords": [
     "enhanced input",
     "react",
@@ -64,6 +62,5 @@
   "bugs": {
     "url": "https://github.com/ChoTotOSS/search-suggestion/issues"
   },
-  "homepage":
-    "https://github.com/ChoTotOSS/search-suggestion/blob/master/README.md"
+  "homepage": "https://github.com/ChoTotOSS/search-suggestion/blob/master/README.md"
 }

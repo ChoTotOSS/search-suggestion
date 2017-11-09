@@ -5,7 +5,7 @@
 Download the example [or clone the repo](https://github.com/ChoTotOSS/search-suggestion):
 
 ```bash
-cd example/withStaticData
+cd examples/withStaticData
 ```
 
 Install it and run:
