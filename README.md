@@ -118,9 +118,9 @@ render(<App />, document.getElementById('root'));
 ```
 
 ## Examples
-Check here for more example: 
-
-[https://github.com/ChoTotOSS/search-suggestion/tree/master/examples/](https://github.com/ChoTotOSS/search-suggestion/tree/master/examples/)
+- [with simple basic data](https://github.com/ChoTotOSS/search-suggestion/tree/master/examples/withBasic)
+- [with simple list object data](https://github.com/ChoTotOSS/search-suggestion/tree/master/examples/withStaticData)
+- [with redux](https://github.com/ChoTotOSS/search-suggestion/tree/master/examples/withRedux)
 
 ## Showcase
 Websites built with Search Suggestion component
