@@ -20,7 +20,7 @@ Also this component applies `Function as Child Components` pattern. You can read
  - [Usage](https://github.com/ChoTotOSS/search-suggestion#usage)
  - [Examples](https://github.com/ChoTotOSS/search-suggestion#examples)
  - [Props](https://github.com/ChoTotOSS/search-suggestion#props)
- - [Child callback functions](https://github.com/ChoTotOSS/search-suggestion#child-callback-function)
+ - [Child callback functions](https://github.com/ChoTotOSS/search-suggestion#child-callback-functions)
  - [Actions](https://github.com/ChoTotOSS/search-suggestion#actions)
  - [States](https://github.com/ChoTotOSS/search-suggestion#states)
  - [Showcase](https://github.com/ChoTotOSS/search-suggestion#showcase)
