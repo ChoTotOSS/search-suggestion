@@ -14,6 +14,17 @@ Simple lightweight search suggestion component. This component was inspired by
 
 Also this component applies `Function as Child Components` pattern. You can read more about this pattern [here](https://medium.com/merrickchristensen/function-as-child-components-5f3920a9ace9)
 
+## Table content
+
+ - [Installation](https://github.com/ChoTotOSS/search-suggestion#installation)
+ - [Usage](https://github.com/ChoTotOSS/search-suggestion#usage)
+ - [Examples](https://github.com/ChoTotOSS/search-suggestion#examples)
+ - [Props](https://github.com/ChoTotOSS/search-suggestion#props)
+ - [Child callback functions](https://github.com/ChoTotOSS/search-suggestion#child-callback-function)
+ - [Actions](https://github.com/ChoTotOSS/search-suggestion#actions)
+ - [States](https://github.com/ChoTotOSS/search-suggestion#states)
+ - [Showcase](https://github.com/ChoTotOSS/search-suggestion#showcase)
+ - [Alternatives](https://github.com/ChoTotOSS/search-suggestion#alternatives)
 
 ## Installation
 
@@ -122,6 +133,73 @@ render(<App />, document.getElementById('root'));
 - [with simple list object data](https://github.com/ChoTotOSS/search-suggestion/tree/master/examples/withStaticData)
 - [with redux](https://github.com/ChoTotOSS/search-suggestion/tree/master/examples/withRedux)
 
+## Props
+
+### items
+> `Array` | default is an empty array
+
+Use as a datasource to render list result.
+
+### getDisplayName
+> `function(item: any)` => return a text
+
+Use to display text content of selected item.
+
+### onSelectedItem
+> `function(item: any)`
+
+Use to set new selected item value and extend the actions based on that selected item.
+
+## Child callback functions
+
+### getInputProps
+> `function({})`
+
+Returns the props you should apply to the `input` element that you render.
+
+### getListItemProps
+> `function({})`
+
+Returns the props you should apply to the list item element that you render.
+
+### getItemProps
+> `function({})`
+
+Returns the props you should apply to any menu item elements you render.
+
+## Actions
+
+### clearInputValue
+> `function()`
+
+Clear current value in `input` element
+
+## States
+
+### inputValue
+> `string`
+
+The current value of `input` element
+
+### highlightedIndex
+> `int`
+
+The current index of highlighted item
+
+### items
+> `array`
+
+The current data of menu
+
+### isOpen
+> `boolean`
+
+The menu open state
+
+### selectedItem
+
+The value of selected item
+
 ## Showcase
 Websites built with Search Suggestion component
 
@@ -131,7 +209,7 @@ Websites built with Search Suggestion component
 ### [Chợ tốt nhà](https://nha.chotot.com/toan-quoc/du-an-rg0-cg10000)
 ![new_property_suggestion](https://user-images.githubusercontent.com/6290720/32546472-d117d3d4-c4b1-11e7-9d10-145a0595463e.gif)
 
-# Alternatives
+## Alternatives
 If you don’t agree with the choices made in this project, you might want to explore alternatives with different tradeoffs. Some of the more popular and actively maintained ones are:
 
 - [react-select](https://github.com/JedWatson/react-select)
