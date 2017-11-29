@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import styled from 'styled-components';
+import { DebounceInput } from 'react-debounce-input';
 
 import Suggestion from 'search-suggestion';
 
@@ -63,7 +64,10 @@ class Home extends React.Component {
             clearInputValue
           }) => (
             <Div>
-              <InputItem
+              <DebounceInput
+                minLength={2}
+                debounceTimeout={300}
+                element={InputItem}
                 {...getInputProps({
                   placeholder: 'Search hacker news by Title',
                   onChange: this.handleChange
