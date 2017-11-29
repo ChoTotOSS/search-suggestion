@@ -141,6 +141,7 @@ render(<App />, document.getElementById('root'));
 * [with simple basic data](https://github.com/ChoTotOSS/search-suggestion/tree/master/examples/withBasic)
 * [with simple list object data](https://github.com/ChoTotOSS/search-suggestion/tree/master/examples/withStaticData)
 * [with redux](https://github.com/ChoTotOSS/search-suggestion/tree/master/examples/withRedux)
+* [with redux & debounce component](https://github.com/ChoTotOSS/search-suggestion/tree/master/examples/withDebounceInput)
 
 ## Props
 
