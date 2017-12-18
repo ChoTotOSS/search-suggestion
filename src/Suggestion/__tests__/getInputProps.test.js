@@ -373,3 +373,23 @@ describe('getInputProps()', () => {
     global.document.body.removeChild(div);
   });
 });
+
+it('Event - custom key down ', () => {
+  const handleKeyDownSpy = spy();
+  const { BasicAutoComplete } = setup({
+    inputProps: {
+      onKeyDown: handleKeyDownSpy
+    }
+  });
+
+  const div = global.document.createElement('div');
+  global.document.body.appendChild(div);
+  const wrapper = mount(<BasicAutoComplete />, { attachTo: div });
+  const input = wrapper.find('#__inputItemProps');
+
+  input.simulate('keydown', { keyCode: KEYS_EVENT.ENTER });
+  expect(handleKeyDownSpy.calledOnce).toBe(true);
+
+  wrapper.detach();
+  global.document.body.removeChild(div);
+});

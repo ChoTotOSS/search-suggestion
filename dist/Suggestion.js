@@ -211,12 +211,16 @@ var _initialiseProps = function _initialiseProps() {
     var handleChange = props.onChange,
         handleBlur = props.onBlur,
         handleFocus = props.onFocus,
+        handleKeyDown = props.onKeyDown,
         placeholder = props.placeholder;
     var inputValue = _this3.state.inputValue;
 
 
     var onKeyDown = function onKeyDown(e) {
       _this3.onKeyDown(e);
+      if (typeof handleKeyDown === 'function') {
+        handleKeyDown(e);
+      }
     };
 
     var onChange = function onChange(e) {

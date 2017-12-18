@@ -137,12 +137,16 @@ class Suggestion extends React.Component {
       onChange: handleChange,
       onBlur: handleBlur,
       onFocus: handleFocus,
+      onKeyDown: handleKeyDown,
       placeholder
     } = props;
     const { inputValue } = this.state;
 
     const onKeyDown = e => {
       this.onKeyDown(e);
+      if (typeof handleKeyDown === 'function') {
+        handleKeyDown(e);
+      }
     };
 
     const onChange = e => {

@@ -18,9 +18,9 @@ var _enzymeAdapterReact = require('enzyme-adapter-react-15');
 
 var _enzymeAdapterReact2 = _interopRequireDefault(_enzymeAdapterReact);
 
-var _setup9 = require('../fixtures/setup');
+var _setup10 = require('../fixtures/setup');
 
-var _setup10 = _interopRequireDefault(_setup9);
+var _setup11 = _interopRequireDefault(_setup10);
 
 var _data = require('../fixtures/data');
 
@@ -38,7 +38,7 @@ _enzyme2.default.configure({ adapter: new _enzymeAdapterReact2.default() });
 
 describe('getInputProps()', function () {
   it('Event - keyDown - Up & Down', function () {
-    var _setup = (0, _setup10.default)(),
+    var _setup = (0, _setup11.default)(),
         BasicAutoComplete = _setup.BasicAutoComplete,
         Children = _setup.Children;
 
@@ -48,13 +48,13 @@ describe('getInputProps()', function () {
     var wrapper = (0, _enzyme.mount)(_react2.default.createElement(BasicAutoComplete, null), { attachTo: div });
     var input = wrapper.find('#__inputItemProps');
 
-    var filterData = (0, _setup9.createData)(keyWord, _data2.default);
+    var filterData = (0, _setup10.createData)(keyWord, _data2.default);
     wrapper.setProps({ items: filterData });
 
     expect(filterData.length).toBe(6);
 
     // ⬇️
-    input.simulate('keydown', { keyCode: _setup9.KEYS_EVENT.DOWN });
+    input.simulate('keydown', { keyCode: _setup10.KEYS_EVENT.DOWN });
     expect(Children).toHaveBeenLastCalledWith(expect.objectContaining({
       isOpen: false,
       highlightedIndex: 0
@@ -68,63 +68,63 @@ describe('getInputProps()', function () {
     }));
 
     // not key up & key down
-    input.simulate('keydown', { keyCode: _setup9.KEYS_EVENT.ESCAPE });
+    input.simulate('keydown', { keyCode: _setup10.KEYS_EVENT.ESCAPE });
     expect(Children).toHaveBeenLastCalledWith(expect.objectContaining({
       isOpen: true,
       highlightedIndex: 0
     }));
 
     // ⬆️
-    input.simulate('keydown', { keyCode: _setup9.KEYS_EVENT.UP });
+    input.simulate('keydown', { keyCode: _setup10.KEYS_EVENT.UP });
     expect(Children).toHaveBeenLastCalledWith(expect.objectContaining({
       isOpen: true,
       highlightedIndex: 0
     }));
 
     // ⬇️
-    input.simulate('keydown', { keyCode: _setup9.KEYS_EVENT.DOWN });
+    input.simulate('keydown', { keyCode: _setup10.KEYS_EVENT.DOWN });
     expect(Children).toHaveBeenLastCalledWith(expect.objectContaining({
       isOpen: true,
       highlightedIndex: 1
     }));
 
     // ⬇️
-    input.simulate('keydown', { keyCode: _setup9.KEYS_EVENT.DOWN });
+    input.simulate('keydown', { keyCode: _setup10.KEYS_EVENT.DOWN });
     expect(Children).toHaveBeenLastCalledWith(expect.objectContaining({
       isOpen: true,
       highlightedIndex: 2
     }));
 
     // ⬇️
-    input.simulate('keydown', { keyCode: _setup9.KEYS_EVENT.DOWN });
+    input.simulate('keydown', { keyCode: _setup10.KEYS_EVENT.DOWN });
     expect(Children).toHaveBeenLastCalledWith(expect.objectContaining({
       isOpen: true,
       highlightedIndex: 3
     }));
 
     // ⬇️
-    input.simulate('keydown', { keyCode: _setup9.KEYS_EVENT.DOWN });
+    input.simulate('keydown', { keyCode: _setup10.KEYS_EVENT.DOWN });
     expect(Children).toHaveBeenLastCalledWith(expect.objectContaining({
       isOpen: true,
       highlightedIndex: 4
     }));
 
     // ⬇️
-    input.simulate('keydown', { keyCode: _setup9.KEYS_EVENT.DOWN });
+    input.simulate('keydown', { keyCode: _setup10.KEYS_EVENT.DOWN });
     expect(Children).toHaveBeenLastCalledWith(expect.objectContaining({
       isOpen: true,
       highlightedIndex: 5
     }));
 
     // ⬇️
-    input.simulate('keydown', { keyCode: _setup9.KEYS_EVENT.DOWN });
+    input.simulate('keydown', { keyCode: _setup10.KEYS_EVENT.DOWN });
     expect(Children).toHaveBeenLastCalledWith(expect.objectContaining({
       isOpen: true,
       highlightedIndex: 5
     }));
 
     // ⬆️
-    input.simulate('keydown', { keyCode: _setup9.KEYS_EVENT.UP });
+    input.simulate('keydown', { keyCode: _setup10.KEYS_EVENT.UP });
     expect(Children).toHaveBeenLastCalledWith(expect.objectContaining({
       isOpen: true,
       highlightedIndex: 4
@@ -135,7 +135,7 @@ describe('getInputProps()', function () {
   });
 
   it('Event - keyDown - ESC', function () {
-    var _setup2 = (0, _setup10.default)(),
+    var _setup2 = (0, _setup11.default)(),
         BasicAutoComplete = _setup2.BasicAutoComplete,
         Children = _setup2.Children;
 
@@ -143,7 +143,7 @@ describe('getInputProps()', function () {
     var input = wrapper.find('#__inputItemProps');
 
     // ⬇️
-    input.simulate('keydown', { keyCode: _setup9.KEYS_EVENT.ESCAPE });
+    input.simulate('keydown', { keyCode: _setup10.KEYS_EVENT.ESCAPE });
     expect(Children).toHaveBeenLastCalledWith(expect.objectContaining({
       isOpen: false,
       highlightedIndex: 0
@@ -151,7 +151,7 @@ describe('getInputProps()', function () {
   });
 
   it('Event - onChange', function () {
-    var _setup3 = (0, _setup10.default)(),
+    var _setup3 = (0, _setup11.default)(),
         BasicAutoComplete = _setup3.BasicAutoComplete,
         Children = _setup3.Children;
 
@@ -160,7 +160,7 @@ describe('getInputProps()', function () {
     var wrapper = (0, _enzyme.mount)(_react2.default.createElement(BasicAutoComplete, null), { attachTo: div });
     var input = wrapper.find('#__inputItemProps');
 
-    var filterData = (0, _setup9.createData)('pa', _data2.default);
+    var filterData = (0, _setup10.createData)('pa', _data2.default);
     wrapper.setProps({ items: filterData });
 
     expect(filterData.length).toBe(6);
@@ -173,7 +173,7 @@ describe('getInputProps()', function () {
     }));
 
     // empty keyword
-    filterData = (0, _setup9.createData)('', _data2.default);
+    filterData = (0, _setup10.createData)('', _data2.default);
     wrapper.setProps({ items: filterData });
 
     expect(filterData.length).toBe(157);
@@ -186,7 +186,7 @@ describe('getInputProps()', function () {
     }));
 
     // not found keyword
-    filterData = (0, _setup9.createData)('babababab', _data2.default);
+    filterData = (0, _setup10.createData)('babababab', _data2.default);
     wrapper.setProps({ items: filterData });
 
     expect(filterData.length).toBe(0);
@@ -203,7 +203,7 @@ describe('getInputProps()', function () {
   });
 
   it('Event - onEnter', function () {
-    var _setup4 = (0, _setup10.default)(),
+    var _setup4 = (0, _setup11.default)(),
         BasicAutoComplete = _setup4.BasicAutoComplete,
         Children = _setup4.Children;
 
@@ -214,7 +214,7 @@ describe('getInputProps()', function () {
       } }), { attachTo: div });
     var input = wrapper.find('#__inputItemProps');
 
-    var filterData = (0, _setup9.createData)('pa', _data2.default);
+    var filterData = (0, _setup10.createData)('pa', _data2.default);
     wrapper.setProps({ items: filterData });
 
     expect(filterData.length).toBe(6);
@@ -229,13 +229,13 @@ describe('getInputProps()', function () {
     var selectedItem = filterData[1];
 
     // ⬇️
-    input.simulate('keydown', { keyCode: _setup9.KEYS_EVENT.DOWN });
+    input.simulate('keydown', { keyCode: _setup10.KEYS_EVENT.DOWN });
     expect(Children).toHaveBeenLastCalledWith(expect.objectContaining({
       isOpen: true,
       highlightedIndex: 1
     }));
 
-    input.simulate('keydown', { keyCode: _setup9.KEYS_EVENT.ENTER });
+    input.simulate('keydown', { keyCode: _setup10.KEYS_EVENT.ENTER });
     expect(Children).toHaveBeenLastCalledWith(expect.objectContaining({
       isOpen: false,
       selectedItem: selectedItem,
@@ -247,7 +247,7 @@ describe('getInputProps()', function () {
   it('Event - focus', function () {
     var handleFocusSpy = (0, _sinon.spy)();
 
-    var _setup5 = (0, _setup10.default)({
+    var _setup5 = (0, _setup11.default)({
       inputProps: {
         onFocus: handleFocusSpy
       }
@@ -271,7 +271,7 @@ describe('getInputProps()', function () {
   it('Event - blur', function () {
     var handleBlurSpy = (0, _sinon.spy)();
 
-    var _setup6 = (0, _setup10.default)({
+    var _setup6 = (0, _setup11.default)({
       inputProps: {
         onBlur: handleBlurSpy
       }
@@ -315,7 +315,7 @@ describe('getInputProps()', function () {
   it('has onChange as string', function () {
     var handleChangeSpy = 'change';
 
-    var _setup7 = (0, _setup10.default)({
+    var _setup7 = (0, _setup11.default)({
       inputProps: {
         onChange: handleChangeSpy
       }
@@ -328,7 +328,7 @@ describe('getInputProps()', function () {
     var wrapper = (0, _enzyme.mount)(_react2.default.createElement(BasicAutoComplete, null), { attachTo: div });
     var input = wrapper.find('#__inputItemProps');
 
-    var filterData = (0, _setup9.createData)('pa', _data2.default);
+    var filterData = (0, _setup10.createData)('pa', _data2.default);
     wrapper.setProps({ items: filterData });
 
     expect(filterData.length).toBe(6);
@@ -347,7 +347,7 @@ describe('getInputProps()', function () {
   it('has onBlur as string', function () {
     var handleBlurSpy = 'blur';
 
-    var _setup8 = (0, _setup10.default)({
+    var _setup8 = (0, _setup11.default)({
       inputProps: {
         onBlur: handleBlurSpy
       }
@@ -360,7 +360,7 @@ describe('getInputProps()', function () {
     var wrapper = (0, _enzyme.mount)(_react2.default.createElement(BasicAutoComplete, null), { attachTo: div });
     var input = wrapper.find('#__inputItemProps');
 
-    var filterData = (0, _setup9.createData)('pa', _data2.default);
+    var filterData = (0, _setup10.createData)('pa', _data2.default);
     wrapper.setProps({ items: filterData });
 
     expect(filterData.length).toBe(6);
@@ -373,4 +373,26 @@ describe('getInputProps()', function () {
     wrapper.detach();
     global.document.body.removeChild(div);
   });
+});
+
+it('Event - custom key down ', function () {
+  var handleKeyDownSpy = (0, _sinon.spy)();
+
+  var _setup9 = (0, _setup11.default)({
+    inputProps: {
+      onKeyDown: handleKeyDownSpy
+    }
+  }),
+      BasicAutoComplete = _setup9.BasicAutoComplete;
+
+  var div = global.document.createElement('div');
+  global.document.body.appendChild(div);
+  var wrapper = (0, _enzyme.mount)(_react2.default.createElement(BasicAutoComplete, null), { attachTo: div });
+  var input = wrapper.find('#__inputItemProps');
+
+  input.simulate('keydown', { keyCode: _setup10.KEYS_EVENT.ENTER });
+  expect(handleKeyDownSpy.calledOnce).toBe(true);
+
+  wrapper.detach();
+  global.document.body.removeChild(div);
 });
