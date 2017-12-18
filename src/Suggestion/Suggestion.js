@@ -171,6 +171,7 @@ class Suggestion extends React.Component {
     };
 
     return {
+      ...props,
       id: '__inputItemProps',
       placeholder,
       onKeyDown,

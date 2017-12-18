@@ -244,7 +244,7 @@ var _initialiseProps = function _initialiseProps() {
       }
     };
 
-    return {
+    return _extends({}, props, {
       id: '__inputItemProps',
       placeholder: placeholder,
       onKeyDown: onKeyDown,
@@ -252,7 +252,7 @@ var _initialiseProps = function _initialiseProps() {
       onBlur: onBlur,
       onFocus: onFocus,
       value: inputValue
-    };
+    });
   };
 
   this.getListItemProps = function (props) {
