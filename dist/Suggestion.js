@@ -226,21 +226,21 @@ var _initialiseProps = function _initialiseProps() {
     var onChange = function onChange(e) {
       _this3.onChange(e);
       if (typeof handleChange === 'function') {
-        handleChange(e.target.value);
+        handleChange(e);
       }
     };
 
     var onBlur = function onBlur(e) {
       _this3.onBlurInput(e);
       if (typeof handleBlur === 'function') {
-        handleBlur(e.target.value);
+        handleBlur(e);
       }
     };
 
     var onFocus = function onFocus(e) {
       _this3.onFocusInput(e);
       if (typeof handleFocus === 'function') {
-        handleFocus(e.target.value);
+        handleFocus(e);
       }
     };
 

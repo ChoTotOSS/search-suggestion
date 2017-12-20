@@ -39,7 +39,8 @@ function createData(word, data) {
   });
 }
 
-function handleChange(value) {
+function handleChange(e) {
+  var value = e.target.value;
   var filterData = [];
   if (value) {
     filterData = createData(value, _data2.default);
