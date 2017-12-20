@@ -15,7 +15,8 @@ export function createData(word, data) {
   return data.filter(item => re.test(item.name.toLowerCase()));
 }
 
-export function handleChange(value) {
+export function handleChange(e) {
+  const value = e.target.value;
   let filterData = [];
   if (value) {
     filterData = createData(value, countries);
@@ -23,9 +24,11 @@ export function handleChange(value) {
   return filterData;
 }
 
-export default function setup(
-  { data = countries, inputProps = {}, itemProps = {} } = {}
-) {
+export default function setup({
+  data = countries,
+  inputProps = {},
+  itemProps = {}
+} = {}) {
   const Children = jest.fn(
     ({
       getInputProps,

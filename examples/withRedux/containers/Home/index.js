@@ -38,7 +38,8 @@ class Home extends React.Component {
     };
   }
 
-  handleChange = keyword => {
+  handleChange = e => {
+    const keyword = e.target.value;
     const { dispatch } = this.props;
     if (keyword) {
       dispatch(fetchData(keyword));

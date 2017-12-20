@@ -152,21 +152,21 @@ class Suggestion extends React.Component {
     const onChange = e => {
       this.onChange(e);
       if (typeof handleChange === 'function') {
-        handleChange(e.target.value);
+        handleChange(e);
       }
     };
 
     const onBlur = e => {
       this.onBlurInput(e);
       if (typeof handleBlur === 'function') {
-        handleBlur(e.target.value);
+        handleBlur(e);
       }
     };
 
     const onFocus = e => {
       this.onFocusInput(e);
       if (typeof handleFocus === 'function') {
-        handleFocus(e.target.value);
+        handleFocus(e);
       }
     };
 

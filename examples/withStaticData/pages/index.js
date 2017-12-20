@@ -17,7 +17,9 @@ const AppWrapper = styled.div`
     font-size: 16px;
   }
 `;
-const Div = styled.div`position: relative;`;
+const Div = styled.div`
+  position: relative;
+`;
 
 class App extends Component {
   constructor(props) {
@@ -33,7 +35,8 @@ class App extends Component {
     return data.filter(item => re.test(item.name.toLowerCase()));
   };
 
-  handleChange = value => {
+  handleChange = e => {
+    const value = e.target.value;
     let filterData = [];
     if (value) {
       filterData = this.createData(value, countries);

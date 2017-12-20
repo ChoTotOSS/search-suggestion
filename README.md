@@ -68,7 +68,8 @@ class App extends Component {
     return data.filter(item => re.test(item.toLowerCase()));
   };
 
-  handleChange = value => {
+  handleChange = e => {
+    const value = e.target.value;
     let filterData = [];
     if (value) {
       filterData = this.createData(value, items);
