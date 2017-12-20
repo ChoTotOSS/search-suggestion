@@ -24,10 +24,11 @@
     "react-redux": "^5.0.4",
     "redux": "^3.6.0",
     "redux-devtools-extension": "^2.13.2",
-    "search-suggestion": "^0.0.7",
+    "search-suggestion": "^1.0.3",
     "styled-components": "^2.1.1"
   },
-  "author": "David Nguyen <dzungnguyen179@gmail.com> (dzungnguyen179@gmail.com)",
+  "author":
+    "David Nguyen <dzungnguyen179@gmail.com> (dzungnguyen179@gmail.com)",
   "license": "MIT",
   "devDependencies": {}
 }
