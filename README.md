@@ -64,8 +64,7 @@ class App extends Component {
   }
 
   createData = (word, data) => {
-    const re = new RegExp(`${word.toLowerCase()}.*\\B`, 'g');
-    return data.filter(item => re.test(item.toLowerCase()));
+    return data.filter(item => item.toLowerCase().includes(word.toLowerCase()));
   };
 
   handleChange = e => {
