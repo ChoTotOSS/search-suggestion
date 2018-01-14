@@ -59,7 +59,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentData: []
+      dataSource: []
     };
   }
 
@@ -69,12 +69,12 @@ class App extends Component {
 
   handleChange = e => {
     const value = e.target.value;
-    let filterData = [];
+    let dataSource = [];
     if (value) {
-      filterData = this.createData(value, items);
+      dataSource = this.createData(value, items);
     }
     this.setState({
-      currentData: filterData
+      dataSource,
     });
   };
 
@@ -82,7 +82,7 @@ class App extends Component {
     return (
       <Suggestion
         getDisplayName={item => item}
-        items={this.state.currentData}
+        items={this.state.dataSource}
         onSelectedItem={item => alert(item)}
       >
         {({
