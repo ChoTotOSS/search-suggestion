@@ -63,18 +63,14 @@ class App extends Component {
     };
   }
 
-  createData = (word, data) => {
-    return data.filter(item => item.toLowerCase().includes(word.toLowerCase()));
-  };
-
   handleChange = e => {
     const value = e.target.value;
     let dataSource = [];
     if (value) {
-      dataSource = this.createData(value, items);
+      dataSource = items.filter(item => item.toLowerCase().includes(value.toLowerCase()));
     }
     this.setState({
-      dataSource,
+      dataSource
     });
   };
 
